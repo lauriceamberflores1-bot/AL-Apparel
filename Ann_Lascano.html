@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>
+        About Me | Ann Lascano
+    </title>
+    <style>
+header {
+  background-color: #37353E;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.icon-bar {
+  background-color: #37353E; 
+  padding: 5px 15px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-bar img {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  height: 1000px;
+  background: #715A5A;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+
+<body>
+    
+<header>
+<a href="A&L Apparel.html">
+<img src="icons/A&L_logo.png" alt="A&L Logo" align="left" height="110px" width="196.8px">
+</a>
+<div class="icon-bar">
+<a href="#" id="searchButton">
+<img src="icons/Search_Icon.png" alt="Search" height="100px" width="100px">
+</a>
+<a href="LogIn.html"><img src="icons/Account_Icon.png" alt="Account" height="100px" width="100px"></a>
+</div>
+</header>
+
+<nav>
+<h1 class="nav_text">♪ Upper Wear   </h1>
+<h2 class="nav_upperwear"><a href="default.asp"> ⋆ Shirts </a></h2>
+<h2 class="nav_upperwear"><a href="default.asp"> ⋆ Undergarments </a></h2>
+<h2 class="nav_upperwear"><a href="default.asp"> ⋆ Longsleeves </a></h2>
+<h1 class="nav_text">♪ Lower Wear   </h1>
+<h2 class="nav_lowerwear"><a href="default.asp"> ⋆ Pants </a></h2>
+<h2 class="nav_lowerwear"><a href="default.asp"> ⋆ Skirts </a></h2>
+<h2 class="nav_lowerwear"><a href="default.asp"> ⋆ Shorts </a></h2>
+<h1 class="nav_text">♪ Accessories  </h1>
+<h2 class="nav_accessories"><a href="default.asp"> ⋆ Headwear </a></h2>
+<h2 class="nav_accessories"><a href="default.asp"> ⋆ Neckwear </a></h2>
+<h2 class="nav_accessories"><a href="default.asp"> ⋆ Footwear </a></h2>
+<h2><a href="Developers_AboutUs.HTML" class="nav_text"> 𝄞 About Us  </a></h2>
+</nav>
+
+ <a href="Developers_AboutUs.HTML" class="about_us_button"> About Us </a>
+ 
+<div class="container_2">
+
+    <img src="Developers/Ann_Lascano.png" alt="Developer_1" class="developers_img_1">
+
+<h1 class="about__me">I'm A&L's CEO! <br>
+   <em> Ann Loren Lascano </em> </h1>
+
+
+
+</div>
+<div class="container_x">
+<div class="container_a">
+<h2 class="personal_info"> 09317361354 </h2>
+</div>
+<div class="container_b">
+<h2 class="personal_info"> annlorenlascano8@gmail.com </h2>
+</div>
+<div class="container_c">
+<h2 class="personal_info"> @AnnLoren </h2>
+</div>
+
+
+</div>
+
+   <div class="container_3"> 
+<h2 class="about__me_2"> As the CEO of A&L Apparel, I lead our brand with passion and a clear vision for the future. I believe in creating not just clothing, but a movement that inspires confidence and style in everyone who wears our pieces. Every decision I make is rooted in our mission to keep fashion both accessible and meaningful, while pushing our brand to grow and stand out in the industry. </h1>
+</div>
+<script>
+
+const searchButton = document.getElementById('searchButton'); 
+const navBar = document.querySelector('nav');
+
+searchButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  navBar.classList.toggle('show');
+});
+
+</script>
+
+
+</body>
+
+
+</html>

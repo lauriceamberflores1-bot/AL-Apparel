@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>
+       Contact Us! | A&L's Apparel
+    </title>
+    <style>
+body{
+  background-image: url(background/background_contacts.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #6a3ee263;
+  background-blend-mode: overlay;
+}
+
+header {
+  background-color: #5bd43ca4;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px #4b97dd; 
+}
+
+.icon-bar {
+  background-color: #4b1a3700; 
+  padding: 5px 15px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-bar img {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+nav{
+  position: fixed;
+  top: 150px; 
+  left: 0;
+  width: 15%;
+  height: 800px;
+  background: #ee9db8a4;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-100%); 
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 1000;
+  box-shadow: 4px 4px 4px #34d62e, 0px -2px 0px #e9bcc2;
+  border-radius: 0px 12px 0 12px;
+  backdrop-filter: blur(1px);
+}
+
+.nav_text_1
+{
+  font-size: 35px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #222dc4;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #790d3a, 0px -2px 0px #e0a89e;
+  letter-spacing: 2px;
+}
+
+nav.show {
+  opacity: 1;
+  transform: translateX(0); 
+  visibility: visible;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav a:link, nav a:visited {
+  color: #fcdde2;
+}
+nav a:hover, nav a:active {
+  color: #e785a6;
+}
+
+.nav_upperwear_1
+{
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #222dc4;
+  letter-spacing: 1px;
+}
+
+.nav_lowerwear_2
+{
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #222dc4;
+  letter-spacing: 1px;
+}
+.nav_accessories_3
+{
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #222dc4;
+  letter-spacing: 1px;
+}
+
+.sign_container {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+  margin: 30px auto;
+  width: 700px;
+  background-color: rgba(245, 149, 186, 0.836);
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  text-align: center;           
+  box-shadow: 6px 6px 6px 10px #34d62ece;     
+}
+
+.sign {
+  font-size: 75px;    
+  font-family: Book Antiqua;
+  font-weight: lighter;
+  color: #222dc4;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #34d62e, 0px -2px 0px #f0a6c5, -1px -1px 5px #811852 ;
+  letter-spacing: 1px;
+}
+.sign_container2 {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+  margin: 30px auto;
+  width: 500px;
+  padding: 30px;
+  text-align: center;           
+}
+
+.sign_container2 img
+{
+    width: 500px;
+    height: 500px;
+}
+label
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #fabbd5;
+    text-shadow: 2px 2px 2px #611425, 0px -1px 0px #611425;
+    letter-spacing: 1px;
+    font-size: 16px;
+    
+}
+form {
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 1px 0 10px #ffd0e7;
+    text-align: left;
+}
+
+label {
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #7c2437;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px #be2f66;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    border: 3px solid #7c2437;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #be2f66;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #c75282;
+    color: #49101d;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border: 2px solid #7c2437;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #be2f66;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Book Antiqua;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+    background-color: #811852;
+}
+
+.account
+{
+    font-family: Georgia;
+    margin: 5px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fcd6d9;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px #461031, 0px -1px 0px #6e1a4e ;
+}
+
+a:hover {
+  color: #c44a73;
+}
+
+.contact_details {
+  margin: 0 auto;
+  width: 80%; 
+  text-align: justify; 
+  text-align-last: center; 
+  padding-bottom: 30px;
+  line-height: 1.6; 
+}
+
+.contact_details h2 {
+  font-size: 28px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #222dc4;   
+  text-shadow: 1px 1px 1px #83214a, 0px -1px 0px #f0a6c5;
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(to right, #22971e, #2b2daf, #22971e);
+  margin: 10px auto 25px auto;
+}
+</style>
+
+</head>
+
+<body>
+    
+<header>
+<a href="A&L Apparel.html">
+<img src="icons/A&L_logo_LOGIN.png" alt="A&L Logo" align="left" height="110px" width="196.8px">
+</a>
+<div class="icon-bar">
+<a href="#" id="searchButton">
+<img src="icons/Search_Icon_LOGIN.png" alt="Search" height="100px" width="100px">
+</a>
+<a href="LogIn.html"><img src="icons/Account_Icon_LOGIN.png" alt="Account" height="100px" width="100px"></a>
+</div>
+</header>
+
+<nav>
+<h1 class="nav_text_1">♪ Upper Wear   </h1>
+<h2 class="nav_upperwear_1"><a href="default.asp"> ⋆ Shirts </a></h2>
+<h2 class="nav_upperwear_1"><a href="default.asp"> ⋆ Undergarments </a></h2>
+<h2 class="nav_upperwear_1"><a href="default.asp"> ⋆ Longsleeves </a></h2>
+<h1 class="nav_text_1">♪ Lower Wear   </h1>
+<h2 class="nav_lowerwear_2"><a href="default.asp"> ⋆ Pants </a></h2>
+<h2 class="nav_lowerwear_2"><a href="default.asp"> ⋆ Skirts </a></h2>
+<h2 class="nav_lowerwear_2"><a href="default.asp"> ⋆ Shorts </a></h2>
+<h1 class="nav_text_1">♪ Accessories  </h1>
+<h2 class="nav_accessories_3"><a href="default.asp"> ⋆ Headwear </a></h2>
+<h2 class="nav_accessories_3"><a href="default.asp"> ⋆ Neckwear </a></h2>
+<h2 class="nav_accessories_3"><a href="default.asp"> ⋆ Footwear </a></h2>
+<h2><a href="Developers_AboutUs.HTML" class="nav_text"> 𝄞 About Us  </a></h2>
+</nav>
+
+<div class="sign_container"> 
+  <h1 class="sign"> 𝄞 Contact Us! ♪ </h1>
+   <hr class="divider">
+
+  <div class="contact_details">
+    <h2>✩ A&Lcustomersupport@gmail.com</h2> <br>
+    <h2>✩ +63 977 844 5091</h2> <br>
+    <h2>✩ (02) 8893 1245</h2> <br>
+  </div>
+</div>
+
+
+</div>
+
+<div class="sign_container2"> 
+    <img src="icons/contact_us.png">
+</div>
+
+<script>
+const searchButton = document.getElementById('searchButton');
+const navBar = document.querySelector('nav');
+
+searchButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  navBar.classList.toggle('show');
+});
+
+function redirectPage(event) {
+  event.preventDefault();
+  window.location.href = "login.html";
+}
+
+
+</script>
+
+
+</html>

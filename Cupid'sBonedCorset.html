@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Cupid's Boned-Corset | A&L's Apparel</title>
+
+
+<style>
+body{
+  background-image: url('background/background_products.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+header {
+  background-color: #532a27c0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px #58341c;
+}
+
+
+.icon-bar {
+  background-color: #4b1a3700;
+  padding: 5px 15px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+
+.icon-bar img {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+
+.nav_text{
+  font-size: 35px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;  
+  text-shadow: 3px 3px 2px #2b120f, 0px -2px 0px #e0a89e;
+  letter-spacing: 2px;
+}
+
+
+nav {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  width: 15%;
+  height: 800px;
+  background: #6d5151e3;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 1000;
+  box-shadow: 4px 4px 4px #5a3131, 0px -2px 0px #e9bcc2;
+  border-radius: 0px 12px 0 12px;
+  backdrop-filter: blur(1px);
+}
+
+
+nav.show {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+
+nav a:link, nav a:visited {
+  color: #f7dbba;
+}
+nav a:hover, nav a:active {
+  color: #e785a6;
+}
+
+
+.nav_upperwear, .nav_lowerwear, .nav_accessories {
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;
+  letter-spacing: 1px;
+}
+
+
+.nav_upperwear { text-shadow: 3px 3px 2px #9b476a; }
+.nav_lowerwear { text-shadow: 3px 3px 2px #5f7fa3; }
+.nav_accessories { text-shadow: 3px 3px 2px #685292; }
+
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+
+.product-card {
+  background-color: #fff3ecdf;
+  border-radius: 20px;
+  box-shadow: 8px 8px 10px #4e2a1f;
+  padding: 40px;
+  max-width: 400px;
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #3b1e15;
+  transition: transform 0.2s ease;
+}
+
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+
+.product-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.product-title {
+  font-size: 28px;
+  color: #532a27;
+  text-shadow: 2px 2px 3px #e0a89e;
+}
+
+
+.product-price {
+  font-size: 22px;
+  color: #7a3e3e;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.product-description {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+
+.product-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.back-btn, .buy-btn {
+  background-color: #7b4a4a;
+  color: #fff8f0;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 3px 3px 4px #4b2727;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+
+.back-btn:hover, .buy-btn:hover {
+  background-color: #a86b6b;
+  transform: scale(1.05);
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+<a href="A&L Apparel.html">
+<img src="icons/A&L_logo.png" alt="A&L Logo" height="110px" width="196.8px">
+</a>
+
+
+<div class="icon-bar">
+<a href="#" id="searchButton"><img src="icons/Search_Icon.png" alt="Search"></a>
+<a href="LogIn.html"><img src="icons/Account_Icon.png" alt="Account"></a>
+</div>
+</header>
+
+
+<nav>
+<h1 class="nav_text">♪ Upper Wear</h1>
+<h2 class="nav_upperwear"><a href="default.asp">⋆ Shirts</a></h2>
+<h2 class="nav_upperwear"><a href="default.asp">⋆ Undergarments</a></h2>
+<h2 class="nav_upperwear"><a href="default.asp">⋆ Longsleeves</a></h2>
+
+
+<h1 class="nav_text">♪ Lower Wear</h1>
+<h2 class="nav_lowerwear"><a href="default.asp">⋆ Pants</a></h2>
+<h2 class="nav_lowerwear"><a href="default.asp">⋆ Skirts</a></h2>
+<h2 class="nav_lowerwear"><a href="default.asp">⋆ Shorts</a></h2>
+
+
+<h1 class="nav_text">♪ Accessories</h1>
+<h2 class="nav_accessories"><a href="default.asp">⋆ Headwear</a></h2>
+<h2 class="nav_accessories"><a href="default.asp">⋆ Neckwear</a></h2>
+<h2 class="nav_accessories"><a href="default.asp">⋆ Footwear</a></h2>
+
+
+<h2><a href="Developers_AboutUs.HTML" class="nav_text">𝄞 About Us</a></h2>
+</nav>
+
+
+<div class="product-container">
+  <div class="product-card">
+    <img src="products/corset.png" alt="Corset" class="product-image">
+
+
+    <h1 class="product-title">  Cupid’s Boned Corset
+ </h1>
+
+
+    <p class="product-price">₱699.00</p>
+
+
+    <div class="product-description">
+        <p><strong>Available Sizes:</strong> S, M, L,</p>
+      <p><strong>Description:</strong> This Corset is design for helping you to highlight your natural curves with elegance and confident.</p>
+      <p><strong>Fabric Details:</strong> It made from premium faux leather, giving a smooth, polished with soft inner lining for comfort. </p>
+        <p><strong>Washing Instruction:</strong>Wipe slowly, avoid getergents and soaking . </p>
+    </div>
+    <div class="product-buttons">
+      <button class="back-btn" onclick="window.history.back()">Back</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+const searchButton = document.getElementById('searchButton');
+const navBar = document.querySelector('nav');
+
+
+searchButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  navBar.classList.toggle('show');
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+<html>
+<head>
+<title>A&L's Apparel</title>
+<style>
+body{
+background-image: url(background/background_products.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+header {
+background-color: #532a27c0;
+padding: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 5px 5px 5px #58341c;
+}
+.icon-bar {
+background-color: #4b1a3700;
+padding: 5px 15px;
+border-radius: 12px;
+display: flex;
+gap: 10px;
+}
+.icon-bar img {
+display: block;
+height: 100px;
+width: 100px;
+}
+.nav_text{
+font-size: 35px;
+font-family: Georgia;
+font-weight: lighter;
+color: #55322a;
+text-shadow: 3px 3px 2px #2b120f, 0px -2px 0px #e0a89e;
+letter-spacing: 2px;
+}
+nav {
+position: fixed;
+top: 150px;
+left: 0;
+width: 15%;
+height: 800px;
+background: #6d5151e3;
+padding: 20px;
+opacity: 0;
+transform: translateX(-100%);
+visibility: hidden;
+transition: all 0.4s ease;
+z-index: 1000;
+box-shadow: 4px 4px 4px #5a3131, 0px -2px 0px #e9bcc2;
+border-radius: 0px 12px 0 12px;
+backdrop-filter: blur(1px);
+}
+nav.show {
+opacity: 1;
+transform: translateX(0);
+visibility: visible;
+}
+nav a:link, nav a:visited {
+color: #f7dbba;
+}
+nav a:hover, nav a:active {
+color: #e785a6;
+}
+.nav_upperwear, .nav_lowerwear, .nav_accessories {
+font-size: 25px;
+font-family: Georgia;
+font-weight: lighter;
+color: #55322a;
+letter-spacing: 1px;
+}
+.nav_upperwear { text-shadow: 3px 3px 2px #9b476a; }
+.nav_lowerwear { text-shadow: 3px 3px 2px #5f7fa3; }
+.nav_accessories { text-shadow: 3px 3px 2px #685292; }
+.contact_us {
+position: fixed;
+bottom: 90px;
+right: 30px;
+z-index: 1000;
+border-radius: 12px;
+padding: 8px;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.contact_us:hover {
+transform: scale(1.1);
+}
+.contact_us img {
+width: 100px;
+height: auto;
+border-radius: 8px;
+}
+.product-category {
+margin-bottom: 20px;
+}
+.product-category h2 {
+font-size: 28px;
+color: #55322a;
+text-shadow: 2px 2px 1px #2b120f;
+margin-bottom: 10px;
+}
+.product-list {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.product-item {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+.product-item img {
+max-width: 150px;
+height: auto;
+margin-bottom: 10px;
+}
+.product-item h3 {
+font-size: 16px;
+margin-bottom: 5px;
+}
+.product-item p {
+font-size: 14px;
+color: #777;
+}
+.product-description {
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 20px;
+padding: 15px;
+border: 1px solid #ddd;
+background-color: #f9f9f9;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="A&L Apparel.html">
+<img src="icons/A&L_logo.png" alt="A&L Logo" height="110px" width="196.8px">
+</a>
+<div class="icon-bar">
+<a href="#" id="searchButton">
+<img src="icons/Search_Icon.png" alt="Search">
+</a>
+<a href="default.asp">
+<img src="icons/Account_Icon.png" alt="Account">
+</a>
+</div>
+</header>
+<nav>
+<h1 class="nav_text">♪ Upper Wear</h1>
+<h2 class="nav_upperwear"><a href="default.asp">⋆ Shirts</a></h2>
+<h2 class="nav_upperwear"><a href="default.asp">⋆ Undergarments</a></h2>
+<h2 class="nav_upperwear"><a href="default.asp">⋆ Longsleeves</a></h2>
+<h1 class="nav_text">♪ Lower Wear</h1>
+<h2 class="nav_lowerwear"><a href="default.asp">⋆ Pants</a></h2>
+<h2 class="nav_lowerwear"><a href="default.asp">⋆ Skirts</a></h2>
+<h2 class="nav_lowerwear"><a href="default.asp">⋆ Shorts</a></h2>
+<h1 class="nav_text">♪ Accessories</h1>
+<h2 class="nav_accessories"><a href="default.asp">⋆ Headwear</a></h2>
+<h2 class="nav_accessories"><a href="default.asp">⋆ Neckwear</a></h2>
+<h2 class="nav_accessories"><a href="default.asp">⋆ Footwear</a></h2>
+<h2><a href="Developers_AboutUs.HTML" class="nav_text">𝄞About Us</a></h2>
+</nav>
+<div class="contact_us">
+<a href="" target="_blank">
+<img src="icons/contact_icon.png" alt="Contact_Icon" />
+</a>
+</div>
+<div class="product-description">
+<h2>Welcome to A&L's Apparel!</h2>
+<p>Explore our collection of stylish and comfortable clothing. We offer a range of options
+to suit your unique taste.</p>
+</div>
+<div class="product-category">
+<h2>Pants</h2>
+<p class="category-description">The Pants subcategory features a variety of stylish and
+comfortable pants designed for different occasions. From casual to formal, find the perfect pair
+to suit your needs.</p>
+<div class="product-list">
+<div class="product-item"><img src="pants/capri_pants.png"><h3>Capri Pants</h3><p>Php
+500.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="pants/skinny_jeans.png"><h3>Denim Collection: Skinny
+Denim Jeans</h3><p>Php 899.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="pants/cargo_pants.png"><h3>Kim's Cargo
+Pants</h3><p>Php 999.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="pants/sweatpants.png"><h3>A&L's Basic
+Sweatpants</h3><p>Php 879.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="pants/flared_pants.png"><h3>Valentina's Flared
+Pants</h3><p>Php 750.00</p><button>Add to Cart</button></div>
+</div>
+</div>
+<div class="product-category">
+<h2>Shorts</h2>
+<p class="category-description">The Shorts subcategory includes a selection of trendy
+and comfortable shorts perfect for warm weather. Explore different styles, from sporty to casual,
+to complete your summer wardrobe.</p>
+<div class="product-list">
+<div class="product-item"><img src="shorts/surf_shorts.png"><h3>Ann's Surf
+Shorts</h3><p>Php 499.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="shorts/cycling_shorts.png"><h3>A&L's Basic Cycling
+Shorts</h3><p>Php 199.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="shorts/sailor_shorts.png"><h3>Vincy's Sailor
+Shorts</h3><p>Php 450.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="shorts/pleated_shorts.png"><h3>Pleated
+Shorts</h3><p>Php 450.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="shorts/denim_shorts.png"><h3>Denim Collection: Denim
+Shorts</h3><p>Php 399.00</p><button>Add to Cart</button></div>
+</div>
+</div>
+<div class="product-category">
+<h2>Skirts</h2>
+<p class="category-description">The Skirts subcategory offers a variety of stylish skirts
+suitable for different occasions. Discover everything from mini to maxi skirts, perfect for adding a
+touch of elegance to your look.</p>
+<div class="product-list">
+<div class="product-item"><img src="skirts/tulip_skirt.png"><h3>Kippy's Tulip Skirt</h3><p>Php
+650.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="skirts/midi_skirt.png"><h3>A&L's Basic Midi
+Skirt</h3><p>Php 250.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="skirts/maxi_skirt.png"><h3>Lovie's Maxi
+Skirt</h3><p>Php 549.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="skirts/mini_skirt.png"><h3>Amber's Mini
+Skirt</h3><p>Php 450.00</p><button>Add to Cart</button></div>
+<div class="product-item"><img src="skirts/denim_skirt.png"><h3>Denim Collection: Denim
+Skirt</h3><p>Php 500.00</p><button>Add to Cart</button></div>
+</div>
+</div>
+<div class="product-category">
+<h2>Headwear</h2>
+<p class="category-description">
+The Headwear subcategory is made up of stylish hats and head accessories perfect for both
+sunny and cold days. They add comfort and fashion to any outfit.
+</p>
+<div class="product-list">
+<div class="product-item"><h3>Lovie's Headband</h3><p>Php 50.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Amber's Fuzzy Beanie</h3><p>Php 350.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Valentina's Beret</h3><p>Php 449.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>A&L's Pack of Basic Hairclips</h3><p>Php
+70.00</p><button>Add to Cart</button></div>
+<div class="product-item"><h3>Ann's Bucket Hat</h3><p>Php 250.00</p><button>Add to
+Cart</button></div>
+</div>
+</div>
+<div class="product-category">
+<h2>Neckwear</h2>
+<p class="category-description">
+The Neckwear subcategory includes different ties and scarves that bring elegance and
+personality to your look. They can be used for formal or casual wear.
+</p>
+<div class="product-list">
+<div class="product-item"><h3>A&L's Basic Tie</h3><p>Php 250.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Lovie's Bowtie</h3><p>Php 150.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Kippy's Bolo Tie</h3><p>Php 115.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Lovie's Scarf</h3><p>Php 480.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Bandana Scarf</h3><p>Php 150.00</p><button>Add to
+Cart</button></div>
+</div>
+</div>
+<div class="product-category">
+<h2>Footwear</h2>
+<p class="category-description">
+The Footwear subcategory is composed of various socks, leg warmers, and fishnets that give
+comfort, warmth, and style for daily use.
+</p>
+<div class="product-list">
+<div class="product-item"><h3>A&L's Basic Socks</h3><p>Php 99.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Valentina's Thigh Highs</h3><p>Php 250.00</p><button>Add
+to Cart</button></div>
+<div class="product-item"><h3>Ann's Ankle Support Socks</h3><p>Php
+150.00</p><button>Add to Cart</button></div>
+<div class="product-item"><h3>Amber's Leg Warmers</h3><p>Php 199.00</p><button>Add to
+Cart</button></div>
+<div class="product-item"><h3>Angel Fishnets</h3><p>Php 150.00</p><button>Add to
+Cart</button></div>
+</div>
+</div>
+<script>
+const searchButton = document.getElementById('searchButton');
+const navBar = document.querySelector('nav');
+searchButton.addEventListener('click', (e) => {
+e.preventDefault();
+navBar.classList.toggle('show');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+body 
+{
+    background-color: #cd898b;
+}
+
+.about__us
+{
+    font-family: serif;
+    font-weight: 300;
+    font-size: 70px;
+    color: #b9f7fc;
+    text-shadow:  2px 3px 2px #723b3d, 0px -2px 0px #723b3d;
+    text-align: center;
+}
+
+.container_0
+{
+    background-color: #fab4b6;
+    background-size: 10px;
+    margin-inline: 80px;
+    letter-spacing: 0px;
+    word-spacing: 5px;
+    border-radius: 8px;
+    padding-block: 2rem;
+    color: #37353E;
+    box-shadow: 5px 5px 6px #37353eaf;
+  
+    
+}
+
+.aboutus__description
+{
+    margin-inline: 5rem;
+    font-family: Georgia;
+    font-weight: lighter;
+}
+
+.container
+{
+    display: inline-block;
+    place-items: center;
+    margin-inline: 3.8rem;
+    padding-block: 5rem;
+}
+
+.developers__container
+{
+display: grid;
+row-gap: 10px;
+}
+
+.developers__article
+{
+ position: relative;   
+ overflow: hidden;
+}
+
+.developers_img
+{
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px hsla(259, 29%, 23%, 0.699);
+}
+
+.developers__data
+{
+    width: 210px;
+    background-color: #b7d3c5;
+    padding: 10px 10px;
+    box-shadow: 0 8px 24px hsla(0, 27%, 56%, 0.5);
+    border-radius: 10px;
+    position:absolute;
+    bottom: -9rem;
+    left:0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 90%;
+    transition opacity: 2s 1s;
+}
+
+.developers__description
+{
+    display:block;
+    font-size: 15px;
+    margin-bottom: 2px;
+    color:#37353E;
+
+
+}
+
+.developers__title
+{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: #8b8fb8;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px #37353E;
+
+}
+
+.developers__button
+{
+    text-decoration: solid;
+    font-size: 13px;
+    color: #715A5A;
+    font-weight: 500;
+
+}
+
+.developers__button:hover
+{
+    text-decoration: underline;
+    color:hsla(342, 86%, 45%, 0.5);
+}
+
+.developers__article:hover .developers__data
+{
+animation: show-data 1s forwards;
+opacity: 99%;
+transition: opacity 0.5s;
+}
+
+.developers__article:hover
+{
+animation: remove-overflow 2s forwards;
+}
+
+.developers__article: not (:hover)
+{
+    animation: show-overflow 2s forwards;
+}
+
+.developers__article: not (:hover) .developers__data
+{
+    animation: remove-data 2s forwards;
+}
+
+
+@keyframes show-data
+{
+    50%{
+        transform: translateY(-10rem) ;
+    }
+    100% {
+        transform: translateY(-7rem);
+
+    }
+}
+
+@keyframes remove-overflow
+{
+    to {
+    overflow: initial;
+}
+}
+
+
+.about_us_button
+{
+        font-family: serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: #37353E;
+    text-shadow:  1px 2px 1px #fab4b6;
+    text-align: center;
+    text-decoration: none;
+     float: right;
+     padding: 25px 40px;
+
+}
+
+.about_us_button:hover, .about_us_button:active {
+  color: #f8cacc;
+}
+
+.container_2
+{
+ display: flex; 
+ flex-direction: row; 
+ justify-content: space-evenly;
+ align-items: flex-start;
+ padding: 50px;
+    }
+
+
+.developers_img_1
+{
+    width: 310px;
+    place-items: left;
+    padding-inline: 100px;
+    border: 3px solid #fab4b6;
+    border-radius: 70px;
+    padding: 10px;
+    box-shadow: 0 8px 24px hsla(332, 45%, 35%, 0.699);
+}
+
+
+.about__me
+{
+    margin: 50px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 80px;
+    color: #37353E;
+     text-shadow: 3px 4px 12px #f8cacc;
+     align-self: start;
+}
+
+.container_3
+{
+display: block;
+ margin-inline: 80px;
+align-items: center;
+ padding-block: 2rem;
+ float: right;
+
+    }  
+.about__me_2
+{
+    font-size: 25px;
+text-align: bottom;
+color: #37353E;
+ text-shadow: 1px 1px 1px #37353E;
+}
+
+.container_a
+{
+     background-color: #fab4b6;
+    background-size: 7px;
+    margin-inline: 80px;
+    letter-spacing: 0px;
+    word-spacing: 5px;
+    border-radius: 70%;
+    padding-block: 2rem;
+    color: #37353E;
+    align-self: end;
+    box-shadow: 0 8px 24px hsla(259, 29%, 23%, 0.699);
+    margin-left: 3%;
+
+}
+
+.container_b
+{
+     background-color: #fab4b6;
+    background-size: 7px;
+    margin-inline: 80px;
+    letter-spacing: 0px;
+    word-spacing: 5px;
+    border-radius: 70%;
+    padding-block: 2rem;
+    color: #37353E;
+    align-self: end;
+    box-shadow: 0 8px 24px hsla(259, 29%, 23%, 0.699);
+
+}
+
+.container_c
+{
+     background-color: #fab4b6;
+    background-size: 7px;
+    margin-inline: 80px;
+    letter-spacing: 0px;
+    word-spacing: 5px;
+    border-radius: 70%;
+    padding-block: 2rem;
+    color: #37353E;
+    align-self: end;
+    box-shadow: 0 8px 24px hsla(259, 29%, 23%, 0.699);
+
+}
+
+.container_x
+{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.personal_info
+{
+    margin-inline: 12rem;
+    font-family: Georgia;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.nav_text
+{
+  font-size: 35px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #2b120f, 0px -2px 0px #e0a89e;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  top: 150px; 
+  left: 0;
+  width: 15%;
+  height: 800px;
+  background: #6d5151e3;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-100%); 
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 1000;
+  box-shadow: 4px 4px 4px #5a3131, 0px -2px 0px #e9bcc2;
+  border-radius: 0px 12px 0 12px;
+  backdrop-filter: blur(1px);
+}
+
+nav.show {
+  opacity: 1;
+  transform: translateX(0); 
+  visibility: visible;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav a:link, nav a:visited {
+  color: #f7dbba;
+}
+nav a:hover, nav a:active {
+  color: #e785a6;
+}
+
+.nav_upperwear
+{
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #9b476a;
+  letter-spacing: 1px;
+}
+
+.nav_lowerwear
+{
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #5f7fa3;
+  letter-spacing: 1px;
+}
+.nav_accessories
+{
+  font-size: 25px;    
+  font-family: Georgia;
+  font-weight: lighter;
+  color: #55322a;   
+  font-style: normal;   
+  text-shadow: 3px 3px 2px #685292;
+  letter-spacing: 1px;
+}
+
